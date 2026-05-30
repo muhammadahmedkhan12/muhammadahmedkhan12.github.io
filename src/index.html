@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ahmed Khan — AI & CS Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NEURAL NET BG CANVAS -->
+<canvas id="neuralCanvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">AK<span class="nav-dot">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Stack</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#skills" class="mobile-link">Stack</a></li>
+    <li><a href="#projects" class="mobile-link">Projects</a></li>
+    <li><a href="#certifications" class="mobile-link">Certs</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-tag reveal-up" style="--delay:0.1s">
+      <span class="dot-pulse"></span>
+      AI Builder · CS Student · KSBL Karachi
+    </div>
+    <h1 class="hero-name reveal-up" style="--delay:0.25s">
+      Muhammad<br /><em>Ahmed Khan</em>
+    </h1>
+    <p class="hero-sub reveal-up" style="--delay:0.4s">
+      <span class="mono-tag">// Building intelligent systems</span>
+    </p>
+    <p class="hero-desc reveal-up" style="--delay:0.55s">
+      Multi-agent AI · RAG pipelines · Data Engineering · Java Systems
+    </p>
+    <div class="hero-actions reveal-up" style="--delay:0.7s">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        View Projects
+      </a>
+      <a href="mailto:Ahmed1248khan@gmail.com" class="btn-ghost">Get in Touch →</a>
+    </div>
+
+    <!-- Live tech ticker -->
+    <div class="hero-ticker reveal-up" style="--delay:0.9s">
+      <span class="ticker-label">Currently working with:</span>
+      <div class="ticker-track">
+        <span>CrewAI</span><span>•</span>
+        <span>LangChain</span><span>•</span>
+        <span>ChromaDB</span><span>•</span>
+        <span>Python</span><span>•</span>
+        <span>Java</span><span>•</span>
+        <span>Azure SQL</span><span>•</span>
+        <span>n8n</span><span>•</span>
+        <span>RAG</span><span>•</span>
+        <span>CrewAI</span><span>•</span>
+        <span>LangChain</span><span>•</span>
+        <span>ChromaDB</span><span>•</span>
+        <span>Python</span><span>•</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats reveal-up" style="--delay:1s">
+    <div class="stat">
+      <span class="stat-num" data-target="5">0</span>
+      <span class="stat-label">AI/ML Projects</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="10">0</span>
+      <span class="stat-label">Certifications</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="50">0</span>
+      <span class="stat-label">Export Markets (FasalAI)</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-label">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading reveal-up">
+          I build AI systems<br /><em>that actually work.</em>
+        </h2>
+        <p class="reveal-up" style="--delay:0.1s">
+          I'm a CS student at KSBL Karachi with a focus on <strong>AI engineering, multi-agent systems, and data pipelines</strong>.
+          I competed in Pakistan's National AI Hackathon, building FasalAI — a multi-agent compliance platform
+          for agricultural exporters powered by CrewAI, LangChain, and RAG.
+        </p>
+        <p class="reveal-up" style="--delay:0.2s">
+          Beyond AI, I build Java-based systems, automate workflows with n8n, and design
+          normalized relational databases on Azure. I believe in learning by shipping.
+        </p>
+        <div class="about-facts reveal-up" style="--delay:0.3s">
+          <div class="fact-item">
+            <span class="fact-icon">🤖</span>
+            <span>Multi-agent AI with CrewAI + LangChain</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">🔍</span>
+            <span>RAG pipelines using ChromaDB + embeddings</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">⚡</span>
+            <span>Workflow automation with n8n</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">🗄️</span>
+            <span>Cloud databases on Microsoft Azure</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card reveal-up" style="--delay:0.15s">
+        <div class="about-card-inner">
+          <div class="about-card-header">
+            <div class="ai-pulse-ring">
+              <div class="ai-pulse-core">AI</div>
+            </div>
+            <div>
+              <div class="about-card-name">Muhammad Ahmed Khan</div>
+              <div class="about-card-role">AI Builder & CS Student</div>
+            </div>
+          </div>
+          <div class="about-info-rows">
+            <div class="about-info-row">
+              <span class="info-label">Status</span>
+              <span class="info-value active-badge">Open to Internships</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Sc Computer Science</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">University</span>
+              <span class="info-value">KSBL, Karachi</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Grad.</span>
+              <span class="info-value">2028 Expected</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Role</span>
+              <span class="info-value">Campus Ambassador @ Atomcamp</span>
+            </div>
+          </div>
+          <a href="mailto:Ahmed1248khan@gmail.com" class="about-card-cta">
+            Let's Collaborate →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS / TECH STACK -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-label">02 / Tech Stack</div>
+    <h2 class="section-heading reveal-up">Tools & Technologies</h2>
+
+    <!-- Logo Cloud -->
+    <div class="logo-cloud reveal-up" style="--delay:0.05s">
+      <div class="logo-cloud-label">Technologies I work with</div>
+      <div class="logos-grid">
+
+        <!-- Python -->
+        <div class="logo-item" title="Python">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <defs><linearGradient id="pyGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#387EB8"/><stop offset="100%" stop-color="#366994"/></linearGradient><linearGradient id="pyGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE052"/><stop offset="100%" stop-color="#FFC331"/></linearGradient></defs>
+            <path fill="url(#pyGrad1)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.876-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/>
+            <path fill="url(#pyGrad2)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/>
+          </svg>
+          <span>Python</span>
+        </div>
+
+        <!-- Java -->
+        <div class="logo-item" title="Java">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/>
+            <path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/>
+            <path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/>
+            <path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/>
+            <path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/>
+          </svg>
+          <span>Java</span>
+        </div>
+
+        <!-- SQL -->
+        <div class="logo-item" title="SQL">
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none">
+            <ellipse cx="12" cy="6" rx="9" ry="3" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 6v4c0 1.657 4.03 3 9 3s9-1.343 9-3V6" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 10v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 14v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" stroke="#00BCEB" stroke-width="1.5"/>
+          </svg>
+          <span>SQL</span>
+        </div>
+
+        <!-- Azure -->
+        <div class="logo-item" title="Microsoft Azure">
+          <svg viewBox="0 0 96 96" width="36" height="36">
+            <defs><linearGradient id="azGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#114A8B"/><stop offset="100%" stop-color="#0078D4"/></linearGradient></defs>
+            <path fill="url(#azGrad)" d="M33.338 6.544h26.038L33.013 89.456H6.974z"/>
+            <path fill="#0078D4" d="M62.34 6.544h25.69L51.566 51.9l16.427 24.203H38.97L62.34 6.544z"/>
+          </svg>
+          <span>Azure</span>
+        </div>
+
+        <!-- LangChain -->
+        <div class="logo-item" title="LangChain">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#1DC571" stroke-width="1.5"/>
+            <path d="M12 20 Q16 14 20 20 Q24 26 28 20" stroke="#1DC571" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="12" cy="20" r="2.5" fill="#1DC571"/>
+            <circle cx="28" cy="20" r="2.5" fill="#1DC571"/>
+          </svg>
+          <span>LangChain</span>
+        </div>
+
+        <!-- CrewAI -->
+        <div class="logo-item" title="CrewAI">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="4" y="4" width="32" height="32" rx="8" stroke="#F97316" stroke-width="1.5"/>
+            <circle cx="14" cy="16" r="3" fill="#F97316"/>
+            <circle cx="26" cy="16" r="3" fill="#F97316"/>
+            <circle cx="20" cy="26" r="3" fill="#F97316"/>
+            <line x1="14" y1="16" x2="26" y2="16" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+            <line x1="14" y1="16" x2="20" y2="26" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+            <line x1="26" y1="16" x2="20" y2="26" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+          </svg>
+          <span>CrewAI</span>
+        </div>
+
+        <!-- ChromaDB -->
+        <div class="logo-item" title="ChromaDB">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <circle cx="20" cy="20" r="16" stroke="#E15CA6" stroke-width="1.5"/>
+            <circle cx="20" cy="20" r="10" stroke="#E15CA6" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="20" cy="20" r="4" fill="#E15CA6"/>
+          </svg>
+          <span>ChromaDB</span>
+        </div>
+
+        <!-- n8n -->
+        <div class="logo-item" title="n8n">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="3" y="14" width="12" height="12" rx="3" fill="#EA4B71"/>
+            <rect x="25" y="14" width="12" height="12" rx="3" fill="#EA4B71"/>
+            <path d="M15 20 Q20 14 25 20" stroke="#EA4B71" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="20" cy="20" r="2" fill="#EA4B71"/>
+          </svg>
+          <span>n8n</span>
+        </div>
+
+        <!-- Pandas -->
+        <div class="logo-item" title="Pandas">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="8" y="4" width="8" height="32" rx="4" fill="#150458"/>
+            <rect x="24" y="4" width="8" height="32" rx="4" fill="#150458"/>
+            <rect x="8" y="16" width="24" height="8" rx="2" fill="#E70488"/>
+          </svg>
+          <span>Pandas</span>
+        </div>
+
+        <!-- Git -->
+        <div class="logo-item" title="Git">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.172 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"/>
+          </svg>
+          <span>Git</span>
+        </div>
+
+        <!-- JavaFX -->
+        <div class="logo-item" title="JavaFX">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="4" y="4" width="32" height="32" rx="6" fill="#0D47A1" opacity="0.9"/>
+            <text x="20" y="26" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="white">FX</text>
+          </svg>
+          <span>JavaFX</span>
+        </div>
+
+        <!-- Matplotlib -->
+        <div class="logo-item" title="Matplotlib">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="3" y="3" width="34" height="34" rx="4" stroke="#11557C" stroke-width="1.5"/>
+            <polyline points="6,30 14,20 20,24 28,12 34,16" stroke="#11557C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="14" cy="20" r="2" fill="#11557C"/>
+            <circle cx="20" cy="24" r="2" fill="#11557C"/>
+            <circle cx="28" cy="12" r="2" fill="#11557C"/>
+          </svg>
+          <span>Matplotlib</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Skill cards -->
+    <div class="skills-grid">
+
+      <div class="skill-card reveal-up" style="--delay:0.05s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box ai-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <span class="skill-category">AI / ML Engineering</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>CrewAI (Multi-agent)</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span>LangChain + RAG</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+          <div class="skill-item"><span>ChromaDB (Vector DB)</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
+          <div class="skill-item"><span>Python for AI/ML</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.15s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box data-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <span class="skill-category">Data & Automation</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Pandas / Matplotlib</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+          <div class="skill-item"><span>n8n Workflow Automation</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          <div class="skill-item"><span>EDA in Python</span><div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div></div>
+          <div class="skill-item"><span>Excel + Power BI</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.25s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box db-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 5v4c0 1.657-4.03 3-9 3s-9-1.343-9-3V5"/><path d="M21 9v4c0 1.657-4.03 3-9 3s-9-1.343-9-3V9"/><path d="M21 13v4c0 1.657-4.03 3-9 3s-9-1.343-9-3v-4"/></svg>
+          </div>
+          <span class="skill-category">Databases & Cloud</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Azure SQL / SSMS</span><div class="skill-bar"><div class="skill-fill" style="--w:74%"></div></div></div>
+          <div class="skill-item"><span>SQL (CRUD, Procedures)</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          <div class="skill-item"><span>ERD Design + 3NF</span><div class="skill-bar"><div class="skill-fill" style="--w:76%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.35s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box java-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <span class="skill-category">Software Engineering</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Java (OOP)</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span>JavaFX / Swing</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span>DSA (Sorting, Memory)</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-label">03 / Projects</div>
+    <h2 class="section-heading reveal-up">Things I've Built</h2>
+
+    <!-- Featured Project: FasalAI -->
+    <div class="project-featured reveal-up" style="--delay:0.1s">
+      <div class="project-featured-label">
+        <span class="feat-badge">✦ AI Hackathon · National Level</span>
+      </div>
+      <div class="project-featured-body">
+        <div class="project-featured-content">
+          <h3>FasalAI</h3>
+          <p class="project-tagline">Multi-Agent AI · Agricultural Export Compliance · Pakistan</p>
+          <p class="project-desc">
+            Built for Pakistan's National AI Hackathon (Atomcamp). FasalAI is an end-to-end
+            multi-agent AI system that helps Pakistani farmers and exporters navigate
+            SPS, MRL, and phytosanitary regulations for EU, USDA, and Gulf markets.
+          </p>
+          <div class="project-ai-highlight">
+            <div class="ai-highlight-row">
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🤖</div>
+                <div class="ai-hl-text">
+                  <strong>5 CrewAI Agents</strong>
+                  <span>MRL Checker, SPS, Doc Gen, Risk Flagger, اردو</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🔍</div>
+                <div class="ai-hl-text">
+                  <strong>RAG Pipeline</strong>
+                  <span>ChromaDB + LangChain, sub-2s lookups</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🌐</div>
+                <div class="ai-hl-text">
+                  <strong>50+ Export Markets</strong>
+                  <span>EU Pesticides DB, RASFF, USDA FAS APIs</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🇵🇰</div>
+                <div class="ai-hl-text">
+                  <strong>Urdu Language Agent</strong>
+                  <span>Accessible to smallholder farmers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag crewai">CrewAI</span>
+            <span class="tech-tag langchain">LangChain</span>
+            <span class="tech-tag chromadb">ChromaDB</span>
+            <span class="tech-tag python">Python</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-featured-visual">
+          <div class="agent-viz">
+            <div class="agent-viz-title">Multi-Agent Architecture</div>
+            <svg viewBox="0 0 260 260" width="260" height="260">
+              <circle cx="130" cy="130" r="85" stroke="rgba(59,232,176,0.12)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+              <circle cx="130" cy="130" r="50" stroke="rgba(59,232,176,0.08)" stroke-width="1" fill="none"/>
+              <line x1="130" y1="130" x2="130" y2="48" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="211" y2="97" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="183" y2="183" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="77" y2="183" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="49" y2="97" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <circle cx="130" cy="130" r="30" fill="rgba(59,232,176,0.15)" stroke="#3be8b0" stroke-width="1.5"/>
+              <text x="130" y="126" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3be8b0" font-weight="600">Fasal</text>
+              <text x="130" y="138" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3be8b0" font-weight="600">AI</text>
+              <g><circle cx="130" cy="48" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="130" y="44" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">MRL</text><text x="130" y="55" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Checker</text></g>
+              <g><circle cx="211" cy="97" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="211" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">SPS</text><text x="211" y="104" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Agent</text></g>
+              <g><circle cx="183" cy="183" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="183" y="179" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Doc</text><text x="183" y="190" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Gen</text></g>
+              <g><circle cx="77" cy="183" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="77" y="179" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">اردو</text><text x="77" y="190" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Agent</text></g>
+              <g><circle cx="49" cy="97" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="49" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Risk</text><text x="49" y="104" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Flagger</text></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Projects Grid -->
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up" style="--delay:0.1s">
+        <div class="project-card-num">02</div>
+        <div class="project-card-type">Automation · Data Engineering</div>
+        <h3>Excel Data Automation</h3>
+        <p>Automated n8n workflow to filter supplier-specific data from multi-year Excel files. Consolidated repetitive filtering into a single pipeline handling both .xls and .xlsx, saving 3–4 hours per run.</p>
+        <div class="project-card-tags">
+          <span>n8n</span><span>Excel</span><span>ETL</span><span>Automation</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">⚡</span>
+          <span>3–4 hrs saved per run</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.2s">
+        <div class="project-card-num">03</div>
+        <div class="project-card-type">Java · OOP · Systems</div>
+        <h3>College Admission System</h3>
+        <p>Role-based admission management system using Java OOP and Swing/JavaFX. Modules for university applications, scholarship management, and entry test processing with persistent storage.</p>
+        <div class="project-card-tags">
+          <span>Java</span><span>JavaFX</span><span>OOP</span><span>Swing</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">🏛️</span>
+          <span>Full inheritance + polymorphism</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.3s">
+        <div class="project-card-num">04</div>
+        <div class="project-card-type">DSA · Visualization</div>
+        <h3>Sorting & Memory Simulator</h3>
+        <p>JavaFX GUI visualizing Bubble, Selection, Insertion, and Merge Sort in real-time. Includes memory allocation simulator with Best Fit, First Fit, Worst Fit and live fragmentation display.</p>
+        <div class="project-card-tags">
+          <span>JavaFX</span><span>DSA</span><span>Algorithms</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">📊</span>
+          <span>4 algorithms · 3 strategies</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.4s">
+        <div class="project-card-num">05</div>
+        <div class="project-card-type">DBMS · Cloud · Azure</div>
+        <h3>Cinema Management System</h3>
+        <p>Migrated a file-based cinema system to Azure SQL. Designed full ERD, normalized to 3NF, implemented CRUD, stored procedures, and triggers for automated seat + booking management.</p>
+        <div class="project-card-tags">
+          <span>Azure SQL</span><span>SSMS</span><span>3NF</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">☁️</span>
+          <span>Full cloud migration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section certifications" id="certifications">
+  <div class="container">
+    <div class="section-label">04 / Certifications</div>
+    <h2 class="section-heading reveal-up">Credentials & Learning</h2>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal-up" style="--delay:0.05s">
+        <div class="cert-issuer-logo ucsd">UC San Diego</div>
+        <div class="cert-name">Object-Oriented Programming</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.1s">
+        <div class="cert-issuer-logo ucsd">UC San Diego</div>
+        <div class="cert-name">Data Structures & Algorithms</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.15s">
+        <div class="cert-issuer-logo n8n">n8n</div>
+        <div class="cert-name">Intro to Workflow Automation</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.2s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Introduction to Python</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.25s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Intermediate Python</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.3s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Understanding AI</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.35s">
+        <div class="cert-issuer-logo ms">Microsoft</div>
+        <div class="cert-name">Microsoft Excel</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.4s">
+        <div class="cert-issuer-logo ds">Digiskills</div>
+        <div class="cert-name">Communication & Soft Skills</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.45s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Exploratory Data Analysis in Python</div>
+        <div class="cert-status in-progress">⟳ In Progress</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.5s">
+        <div class="cert-issuer-logo ant">Anthropic</div>
+        <div class="cert-name">Introduction to Claude Models</div>
+        <div class="cert-status in-progress">⟳ In Progress</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / TIMELINE -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="section-label">05 / Experience</div>
+    <h2 class="section-heading reveal-up">Experience & Events</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal-up" style="--delay:0.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024 – Present</div>
+          <h3>Campus Ambassador</h3>
+          <div class="timeline-org">Atomcamp · KSBL Karachi</div>
+          <p>Promoted Atomcamp's data science and AI programs at KSBL. Coordinated outreach activities, workshops, and tech events. Served as the primary liaison between Atomcamp and KSBL students.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025</div>
+          <h3>National AI Hackathon</h3>
+          <div class="timeline-org">Powered by Atomcamp</div>
+          <p>Built FasalAI — a multi-agent compliance platform using CrewAI, LangChain, and ChromaDB. Delivered a working end-to-end demo within the hackathon timeline covering 50+ international export markets.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.3s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2026</div>
+          <h3>devDay'26 — SQL Showdown</h3>
+          <div class="timeline-org">Community Competition</div>
+          <p>Competed in SQL Showdown at devDay'26, testing database query skills in a competitive setting.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.4s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024–2026</div>
+          <h3>Tech Community</h3>
+          <div class="timeline-org">GDG Kolachi · AI Datayard</div>
+          <p>GDG Kolachi Developers Day, Power BI Masterclass by AI Datayard. Actively embedded in Karachi's tech ecosystem.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-label">06 / Contact</div>
+    <div class="contact-inner reveal-up">
+      <div class="contact-glow"></div>
+      <h2 class="contact-heading">
+        Let's build something<br /><em>intelligent.</em>
+      </h2>
+      <p class="contact-sub">
+        Open to AI/ML internships, data science collaborations, and
+        interesting conversations about the tech scene in Pakistan.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:Ahmed1248khan@gmail.com" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </span>
+          <span>Ahmed1248khan@gmail.com</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+          <span>GitHub Profile</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-ahmed-khan-782258241/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+          <span>LinkedIn</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="tel:+923362253299" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6.06 6.06l.96-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+          <span>+92 336 2253299</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">AK<span>.</span></span>
+      <span class="footer-copy">© 2025 Muhammad Ahmed Khan · Karachi, Pakistan</span>
+    </div>
+    <div class="footer-right">
+      <span class="footer-built">Built with HTML · CSS · JS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ahmed Khan — AI & CS Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300;1,9..144,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NEURAL NET BG CANVAS -->
+<canvas id="neuralCanvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">AK<span class="nav-dot">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Stack</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#skills" class="mobile-link">Stack</a></li>
+    <li><a href="#projects" class="mobile-link">Projects</a></li>
+    <li><a href="#certifications" class="mobile-link">Certs</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-tag reveal-up" style="--delay:0.1s">
+      <span class="dot-pulse"></span>
+      AI Builder · CS Student · KSBL Karachi
+    </div>
+    <h1 class="hero-name reveal-up" style="--delay:0.25s">
+      Muhammad<br /><em>Ahmed Khan</em>
+    </h1>
+    <p class="hero-sub reveal-up" style="--delay:0.4s">
+      <span class="mono-tag">// Building intelligent systems</span>
+    </p>
+    <p class="hero-desc reveal-up" style="--delay:0.55s">
+      Multi-agent AI · RAG pipelines · Data Engineering · Java Systems
+    </p>
+    <div class="hero-actions reveal-up" style="--delay:0.7s">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        View Projects
+      </a>
+      <a href="mailto:Ahmed1248khan@gmail.com" class="btn-ghost">Get in Touch →</a>
+    </div>
+
+    <!-- Live tech ticker -->
+    <div class="hero-ticker reveal-up" style="--delay:0.9s">
+      <span class="ticker-label">Currently working with:</span>
+      <div class="ticker-track">
+        <span>CrewAI</span><span>•</span>
+        <span>LangChain</span><span>•</span>
+        <span>ChromaDB</span><span>•</span>
+        <span>Python</span><span>•</span>
+        <span>Java</span><span>•</span>
+        <span>Azure SQL</span><span>•</span>
+        <span>n8n</span><span>•</span>
+        <span>RAG</span><span>•</span>
+        <span>CrewAI</span><span>•</span>
+        <span>LangChain</span><span>•</span>
+        <span>ChromaDB</span><span>•</span>
+        <span>Python</span><span>•</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats reveal-up" style="--delay:1s">
+    <div class="stat">
+      <span class="stat-num" data-target="5">0</span>
+      <span class="stat-label">AI/ML Projects</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="10">0</span>
+      <span class="stat-label">Certifications</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="50">0</span>
+      <span class="stat-label">Export Markets (FasalAI)</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-label">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading reveal-up">
+          I build AI systems<br /><em>that actually work.</em>
+        </h2>
+        <p class="reveal-up" style="--delay:0.1s">
+          I'm a CS student at KSBL Karachi with a focus on <strong>AI engineering, multi-agent systems, and data pipelines</strong>.
+          I competed in Pakistan's National AI Hackathon, building FasalAI — a multi-agent compliance platform
+          for agricultural exporters powered by CrewAI, LangChain, and RAG.
+        </p>
+        <p class="reveal-up" style="--delay:0.2s">
+          Beyond AI, I build Java-based systems, automate workflows with n8n, and design
+          normalized relational databases on Azure. I believe in learning by shipping.
+        </p>
+        <div class="about-facts reveal-up" style="--delay:0.3s">
+          <div class="fact-item">
+            <span class="fact-icon">🤖</span>
+            <span>Multi-agent AI with CrewAI + LangChain</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">🔍</span>
+            <span>RAG pipelines using ChromaDB + embeddings</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">⚡</span>
+            <span>Workflow automation with n8n</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-icon">🗄️</span>
+            <span>Cloud databases on Microsoft Azure</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card reveal-up" style="--delay:0.15s">
+        <div class="about-card-inner">
+          <div class="about-card-header">
+            <div class="ai-pulse-ring">
+              <div class="ai-pulse-core">AI</div>
+            </div>
+            <div>
+              <div class="about-card-name">Muhammad Ahmed Khan</div>
+              <div class="about-card-role">AI Builder & CS Student</div>
+            </div>
+          </div>
+          <div class="about-info-rows">
+            <div class="about-info-row">
+              <span class="info-label">Status</span>
+              <span class="info-value active-badge">Open to Internships</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Sc Computer Science</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">University</span>
+              <span class="info-value">KSBL, Karachi</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Grad.</span>
+              <span class="info-value">2028 Expected</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-label">Role</span>
+              <span class="info-value">Campus Ambassador @ Atomcamp</span>
+            </div>
+          </div>
+          <a href="mailto:Ahmed1248khan@gmail.com" class="about-card-cta">
+            Let's Collaborate →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS / TECH STACK -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-label">02 / Tech Stack</div>
+    <h2 class="section-heading reveal-up">Tools & Technologies</h2>
+
+    <!-- Logo Cloud -->
+    <div class="logo-cloud reveal-up" style="--delay:0.05s">
+      <div class="logo-cloud-label">Technologies I work with</div>
+      <div class="logos-grid">
+
+        <!-- Python -->
+        <div class="logo-item" title="Python">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <defs><linearGradient id="pyGrad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#387EB8"/><stop offset="100%" stop-color="#366994"/></linearGradient><linearGradient id="pyGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE052"/><stop offset="100%" stop-color="#FFC331"/></linearGradient></defs>
+            <path fill="url(#pyGrad1)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.876-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/>
+            <path fill="url(#pyGrad2)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/>
+          </svg>
+          <span>Python</span>
+        </div>
+
+        <!-- Java -->
+        <div class="logo-item" title="Java">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zM44.629 84.455s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/>
+            <path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"/>
+            <path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zM90.609 93.041c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"/>
+            <path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/>
+            <path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"/>
+          </svg>
+          <span>Java</span>
+        </div>
+
+        <!-- SQL -->
+        <div class="logo-item" title="SQL">
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none">
+            <ellipse cx="12" cy="6" rx="9" ry="3" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 6v4c0 1.657 4.03 3 9 3s9-1.343 9-3V6" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 10v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" stroke="#00BCEB" stroke-width="1.5"/>
+            <path d="M3 14v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" stroke="#00BCEB" stroke-width="1.5"/>
+          </svg>
+          <span>SQL</span>
+        </div>
+
+        <!-- Azure -->
+        <div class="logo-item" title="Microsoft Azure">
+          <svg viewBox="0 0 96 96" width="36" height="36">
+            <defs><linearGradient id="azGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#114A8B"/><stop offset="100%" stop-color="#0078D4"/></linearGradient></defs>
+            <path fill="url(#azGrad)" d="M33.338 6.544h26.038L33.013 89.456H6.974z"/>
+            <path fill="#0078D4" d="M62.34 6.544h25.69L51.566 51.9l16.427 24.203H38.97L62.34 6.544z"/>
+          </svg>
+          <span>Azure</span>
+        </div>
+
+        <!-- LangChain -->
+        <div class="logo-item" title="LangChain">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#1DC571" stroke-width="1.5"/>
+            <path d="M12 20 Q16 14 20 20 Q24 26 28 20" stroke="#1DC571" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="12" cy="20" r="2.5" fill="#1DC571"/>
+            <circle cx="28" cy="20" r="2.5" fill="#1DC571"/>
+          </svg>
+          <span>LangChain</span>
+        </div>
+
+        <!-- CrewAI -->
+        <div class="logo-item" title="CrewAI">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="4" y="4" width="32" height="32" rx="8" stroke="#F97316" stroke-width="1.5"/>
+            <circle cx="14" cy="16" r="3" fill="#F97316"/>
+            <circle cx="26" cy="16" r="3" fill="#F97316"/>
+            <circle cx="20" cy="26" r="3" fill="#F97316"/>
+            <line x1="14" y1="16" x2="26" y2="16" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+            <line x1="14" y1="16" x2="20" y2="26" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+            <line x1="26" y1="16" x2="20" y2="26" stroke="#F97316" stroke-width="1" opacity="0.6"/>
+          </svg>
+          <span>CrewAI</span>
+        </div>
+
+        <!-- ChromaDB -->
+        <div class="logo-item" title="ChromaDB">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <circle cx="20" cy="20" r="16" stroke="#E15CA6" stroke-width="1.5"/>
+            <circle cx="20" cy="20" r="10" stroke="#E15CA6" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="20" cy="20" r="4" fill="#E15CA6"/>
+          </svg>
+          <span>ChromaDB</span>
+        </div>
+
+        <!-- n8n -->
+        <div class="logo-item" title="n8n">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="3" y="14" width="12" height="12" rx="3" fill="#EA4B71"/>
+            <rect x="25" y="14" width="12" height="12" rx="3" fill="#EA4B71"/>
+            <path d="M15 20 Q20 14 25 20" stroke="#EA4B71" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="20" cy="20" r="2" fill="#EA4B71"/>
+          </svg>
+          <span>n8n</span>
+        </div>
+
+        <!-- Pandas -->
+        <div class="logo-item" title="Pandas">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="8" y="4" width="8" height="32" rx="4" fill="#150458"/>
+            <rect x="24" y="4" width="8" height="32" rx="4" fill="#150458"/>
+            <rect x="8" y="16" width="24" height="8" rx="2" fill="#E70488"/>
+          </svg>
+          <span>Pandas</span>
+        </div>
+
+        <!-- Git -->
+        <div class="logo-item" title="Git">
+          <svg viewBox="0 0 128 128" width="36" height="36">
+            <path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.172 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"/>
+          </svg>
+          <span>Git</span>
+        </div>
+
+        <!-- JavaFX -->
+        <div class="logo-item" title="JavaFX">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="4" y="4" width="32" height="32" rx="6" fill="#0D47A1" opacity="0.9"/>
+            <text x="20" y="26" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="white">FX</text>
+          </svg>
+          <span>JavaFX</span>
+        </div>
+
+        <!-- Matplotlib -->
+        <div class="logo-item" title="Matplotlib">
+          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
+            <rect x="3" y="3" width="34" height="34" rx="4" stroke="#11557C" stroke-width="1.5"/>
+            <polyline points="6,30 14,20 20,24 28,12 34,16" stroke="#11557C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="14" cy="20" r="2" fill="#11557C"/>
+            <circle cx="20" cy="24" r="2" fill="#11557C"/>
+            <circle cx="28" cy="12" r="2" fill="#11557C"/>
+          </svg>
+          <span>Matplotlib</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Skill cards -->
+    <div class="skills-grid">
+
+      <div class="skill-card reveal-up" style="--delay:0.05s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box ai-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <span class="skill-category">AI / ML Engineering</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>CrewAI (Multi-agent)</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          <div class="skill-item"><span>LangChain + RAG</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+          <div class="skill-item"><span>ChromaDB (Vector DB)</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
+          <div class="skill-item"><span>Python for AI/ML</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.15s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box data-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <span class="skill-category">Data & Automation</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Pandas / Matplotlib</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+          <div class="skill-item"><span>n8n Workflow Automation</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          <div class="skill-item"><span>EDA in Python</span><div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div></div>
+          <div class="skill-item"><span>Excel + Power BI</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.25s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box db-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 5v4c0 1.657-4.03 3-9 3s-9-1.343-9-3V5"/><path d="M21 9v4c0 1.657-4.03 3-9 3s-9-1.343-9-3V9"/><path d="M21 13v4c0 1.657-4.03 3-9 3s-9-1.343-9-3v-4"/></svg>
+          </div>
+          <span class="skill-category">Databases & Cloud</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Azure SQL / SSMS</span><div class="skill-bar"><div class="skill-fill" style="--w:74%"></div></div></div>
+          <div class="skill-item"><span>SQL (CRUD, Procedures)</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          <div class="skill-item"><span>ERD Design + 3NF</span><div class="skill-bar"><div class="skill-fill" style="--w:76%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up" style="--delay:0.35s">
+        <div class="skill-card-header">
+          <div class="skill-icon-box java-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <span class="skill-category">Software Engineering</span>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span>Java (OOP)</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><span>JavaFX / Swing</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><span>DSA (Sorting, Memory)</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-label">03 / Projects</div>
+    <h2 class="section-heading reveal-up">Things I've Built</h2>
+
+    <!-- Featured Project: FasalAI -->
+    <div class="project-featured reveal-up" style="--delay:0.1s">
+      <div class="project-featured-label">
+        <span class="feat-badge">✦ AI Hackathon · National Level</span>
+      </div>
+      <div class="project-featured-body">
+        <div class="project-featured-content">
+          <h3>FasalAI</h3>
+          <p class="project-tagline">Multi-Agent AI · Agricultural Export Compliance · Pakistan</p>
+          <p class="project-desc">
+            Built for Pakistan's National AI Hackathon (Atomcamp). FasalAI is an end-to-end
+            multi-agent AI system that helps Pakistani farmers and exporters navigate
+            SPS, MRL, and phytosanitary regulations for EU, USDA, and Gulf markets.
+          </p>
+          <div class="project-ai-highlight">
+            <div class="ai-highlight-row">
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🤖</div>
+                <div class="ai-hl-text">
+                  <strong>5 CrewAI Agents</strong>
+                  <span>MRL Checker, SPS, Doc Gen, Risk Flagger, اردو</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🔍</div>
+                <div class="ai-hl-text">
+                  <strong>RAG Pipeline</strong>
+                  <span>ChromaDB + LangChain, sub-2s lookups</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🌐</div>
+                <div class="ai-hl-text">
+                  <strong>50+ Export Markets</strong>
+                  <span>EU Pesticides DB, RASFF, USDA FAS APIs</span>
+                </div>
+              </div>
+              <div class="ai-hl-item">
+                <div class="ai-hl-icon">🇵🇰</div>
+                <div class="ai-hl-text">
+                  <strong>Urdu Language Agent</strong>
+                  <span>Accessible to smallholder farmers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag crewai">CrewAI</span>
+            <span class="tech-tag langchain">LangChain</span>
+            <span class="tech-tag chromadb">ChromaDB</span>
+            <span class="tech-tag python">Python</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-featured-visual">
+          <div class="agent-viz">
+            <div class="agent-viz-title">Multi-Agent Architecture</div>
+            <svg viewBox="0 0 260 260" width="260" height="260">
+              <circle cx="130" cy="130" r="85" stroke="rgba(59,232,176,0.12)" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+              <circle cx="130" cy="130" r="50" stroke="rgba(59,232,176,0.08)" stroke-width="1" fill="none"/>
+              <line x1="130" y1="130" x2="130" y2="48" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="211" y2="97" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="183" y2="183" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="77" y2="183" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <line x1="130" y1="130" x2="49" y2="97" stroke="rgba(59,232,176,0.25)" stroke-width="1"/>
+              <circle cx="130" cy="130" r="30" fill="rgba(59,232,176,0.15)" stroke="#3be8b0" stroke-width="1.5"/>
+              <text x="130" y="126" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3be8b0" font-weight="600">Fasal</text>
+              <text x="130" y="138" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#3be8b0" font-weight="600">AI</text>
+              <g><circle cx="130" cy="48" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="130" y="44" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">MRL</text><text x="130" y="55" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Checker</text></g>
+              <g><circle cx="211" cy="97" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="211" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">SPS</text><text x="211" y="104" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Agent</text></g>
+              <g><circle cx="183" cy="183" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="183" y="179" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Doc</text><text x="183" y="190" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Gen</text></g>
+              <g><circle cx="77" cy="183" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="77" y="179" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">اردو</text><text x="77" y="190" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Agent</text></g>
+              <g><circle cx="49" cy="97" r="20" fill="rgba(13,17,32,0.9)" stroke="rgba(59,232,176,0.5)" stroke-width="1"/><text x="49" y="93" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Risk</text><text x="49" y="104" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8896b3">Flagger</text></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Projects Grid -->
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up" style="--delay:0.1s">
+        <div class="project-card-num">02</div>
+        <div class="project-card-type">Automation · Data Engineering</div>
+        <h3>Excel Data Automation</h3>
+        <p>Automated n8n workflow to filter supplier-specific data from multi-year Excel files. Consolidated repetitive filtering into a single pipeline handling both .xls and .xlsx, saving 3–4 hours per run.</p>
+        <div class="project-card-tags">
+          <span>n8n</span><span>Excel</span><span>ETL</span><span>Automation</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">⚡</span>
+          <span>3–4 hrs saved per run</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.2s">
+        <div class="project-card-num">03</div>
+        <div class="project-card-type">Java · OOP · Systems</div>
+        <h3>College Admission System</h3>
+        <p>Role-based admission management system using Java OOP and Swing/JavaFX. Modules for university applications, scholarship management, and entry test processing with persistent storage.</p>
+        <div class="project-card-tags">
+          <span>Java</span><span>JavaFX</span><span>OOP</span><span>Swing</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">🏛️</span>
+          <span>Full inheritance + polymorphism</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.3s">
+        <div class="project-card-num">04</div>
+        <div class="project-card-type">DSA · Visualization</div>
+        <h3>Sorting & Memory Simulator</h3>
+        <p>JavaFX GUI visualizing Bubble, Selection, Insertion, and Merge Sort in real-time. Includes memory allocation simulator with Best Fit, First Fit, Worst Fit and live fragmentation display.</p>
+        <div class="project-card-tags">
+          <span>JavaFX</span><span>DSA</span><span>Algorithms</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">📊</span>
+          <span>4 algorithms · 3 strategies</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" style="--delay:0.4s">
+        <div class="project-card-num">05</div>
+        <div class="project-card-type">DBMS · Cloud · Azure</div>
+        <h3>Cinema Management System</h3>
+        <p>Migrated a file-based cinema system to Azure SQL. Designed full ERD, normalized to 3NF, implemented CRUD, stored procedures, and triggers for automated seat + booking management.</p>
+        <div class="project-card-tags">
+          <span>Azure SQL</span><span>SSMS</span><span>3NF</span>
+        </div>
+        <div class="project-metric">
+          <span class="metric-icon">☁️</span>
+          <span>Full cloud migration</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section certifications" id="certifications">
+  <div class="container">
+    <div class="section-label">04 / Certifications</div>
+    <h2 class="section-heading reveal-up">Credentials & Learning</h2>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal-up" style="--delay:0.05s">
+        <div class="cert-issuer-logo ucsd">UC San Diego</div>
+        <div class="cert-name">Object-Oriented Programming</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.1s">
+        <div class="cert-issuer-logo ucsd">UC San Diego</div>
+        <div class="cert-name">Data Structures & Algorithms</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.15s">
+        <div class="cert-issuer-logo n8n">n8n</div>
+        <div class="cert-name">Intro to Workflow Automation</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.2s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Introduction to Python</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.25s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Intermediate Python</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.3s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Understanding AI</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.35s">
+        <div class="cert-issuer-logo ms">Microsoft</div>
+        <div class="cert-name">Microsoft Excel</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.4s">
+        <div class="cert-issuer-logo ds">Digiskills</div>
+        <div class="cert-name">Communication & Soft Skills</div>
+        <div class="cert-status completed">✓ Completed</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.45s">
+        <div class="cert-issuer-logo dc">Datacamp</div>
+        <div class="cert-name">Exploratory Data Analysis in Python</div>
+        <div class="cert-status in-progress">⟳ In Progress</div>
+      </div>
+
+      <div class="cert-card reveal-up" style="--delay:0.5s">
+        <div class="cert-issuer-logo ant">Anthropic</div>
+        <div class="cert-name">Introduction to Claude Models</div>
+        <div class="cert-status in-progress">⟳ In Progress</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / TIMELINE -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="section-label">05 / Experience</div>
+    <h2 class="section-heading reveal-up">Experience & Events</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal-up" style="--delay:0.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024 – Present</div>
+          <h3>Campus Ambassador</h3>
+          <div class="timeline-org">Atomcamp · KSBL Karachi</div>
+          <p>Promoted Atomcamp's data science and AI programs at KSBL. Coordinated outreach activities, workshops, and tech events. Served as the primary liaison between Atomcamp and KSBL students.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025</div>
+          <h3>National AI Hackathon</h3>
+          <div class="timeline-org">Powered by Atomcamp</div>
+          <p>Built FasalAI — a multi-agent compliance platform using CrewAI, LangChain, and ChromaDB. Delivered a working end-to-end demo within the hackathon timeline covering 50+ international export markets.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.3s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2026</div>
+          <h3>devDay'26 — SQL Showdown</h3>
+          <div class="timeline-org">Community Competition</div>
+          <p>Competed in SQL Showdown at devDay'26, testing database query skills in a competitive setting.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up" style="--delay:0.4s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024–2026</div>
+          <h3>Tech Community</h3>
+          <div class="timeline-org">GDG Kolachi · AI Datayard</div>
+          <p>GDG Kolachi Developers Day, Power BI Masterclass by AI Datayard. Actively embedded in Karachi's tech ecosystem.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-label">06 / Contact</div>
+    <div class="contact-inner reveal-up">
+      <div class="contact-glow"></div>
+      <h2 class="contact-heading">
+        Let's build something<br /><em>intelligent.</em>
+      </h2>
+      <p class="contact-sub">
+        Open to AI/ML internships, data science collaborations, and
+        interesting conversations about the tech scene in Pakistan.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:Ahmed1248khan@gmail.com" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </span>
+          <span>Ahmed1248khan@gmail.com</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+          <span>GitHub Profile</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-ahmed-khan-782258241/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+          <span>LinkedIn</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="tel:+923362253299" class="contact-link">
+            <span class="contact-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6.06 6.06l.96-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+          <span>+92 336 2253299</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">AK<span>.</span></span>
+      <span class="footer-copy">© 2025 Muhammad Ahmed Khan · Karachi, Pakistan</span>
+    </div>
+    <div class="footer-right">
+      <span class="footer-built">Built with HTML · CSS · JS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
